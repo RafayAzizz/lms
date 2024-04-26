@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item> <!-- Adjust the value to set the height of the rounded bottom -->
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff" /> <!-- Background color -->
+            <corners android:topLeftRadius="30dp" android:topRightRadius="30dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#93113b">
+
+
+
+    <RelativeLayout
+        android:id="@+id/profile_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp">
+
+        <TextView
+            android:id="@+id/gcuh_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to GCUH"
+            android:textSize="30dp"
+            android:textColor="#E39A1C"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/des_heading"
+            android:layout_below="@+id/gcuh_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Get yourself registered for most in demand"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ubuntu_medium"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/d_heading"
+            android:layout_below="@+id/des_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="courses offered by GCUH"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ubuntu_medium"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/des_heading"
+            android:layout_marginTop="18dp"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                app:cardCornerRadius="56dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/img_circle" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="26dp"
+            android:id="@+id/circleImageLayout"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_below="@+id/des_heading"
+            android:layout_centerHorizontal="true"
+            >
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="48dp"
+                app:cardElevation="0dp"
+                android:background="@drawable/img_circle"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/pickimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/pickimagebtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/circleImageLayout"
+            android:layout_alignEnd="@id/circleImageLayout"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginEnd="-6dp"
+            android:src="@drawable/baseline_camera_alt_24"
+            android:elevation="6dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/profile_set"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/uper_radius">
+
+    <RelativeLayout
+        android:layout_below="@id/profile_set"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/uper_radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="25dp"
+            android:textColor="#93113b"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="32dp"
+            android:fontFamily="@font/ubuntu_bold"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Full Name"
+            android:id="@+id/et_name"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/heading"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/c_p_radius"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Father Name"
+            android:inputType="textPersonName"
+            android:id="@+id/et_fname"
+            android:layout_below="@+id/et_name"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/c_p_radius"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="15dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email Address"
+            android:inputType="textEmailAddress"
+            android:id="@+id/et_signup_email"
+            android:layout_below="@+id/et_fname"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/c_p_radius"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="15dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your CNIC No"
+            android:id="@+id/et_CNIC"
+            android:layout_below="@+id/et_signup_email"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/c_p_radius"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="15dp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinner"
+            android:layout_below="@id/et_CNIC"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            app:hintTextColor="#575656"
+            android:layout_marginTop="15dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeColor="#575656">
+
+            <AutoCompleteTextView
+                android:id="@+id/select_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Courses"
+                android:textSize="15dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/c_p_radius" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Password"
+            android:inputType="textVisiblePassword"
+            android:id="@+id/et_signup_pass"
+            android:layout_below="@+id/spinner"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/c_p_radius"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="Sign Up"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#93113b"
+            android:fontFamily="@font/ubuntu_bold"
+            android:id="@+id/signupbtn"
+            app:cornerRadius="4dp"
+            android:layout_below="@+id/et_signup_pass"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

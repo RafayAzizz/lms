@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.lectures">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="Topic Name"
+        android:id="@+id/topicname"
+        />
+    </androidx.cardview.widget.CardView>
+    <WebView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:id="@+id/webview"/>
+
+
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Enter your queries here"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:padding="8dp"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:id="@+id/editText"/>-->
+</RelativeLayout>
